@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class = "container-fluid bg-primary">
+        <div class="container">          
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+                <div class="container-fluid">   
+                    <img class="me-auto" src ="Logoblanco.png" class ="img-fluid" width="250">
+                    <a class="navbar-brand ms-auto"><i class="fas fa-sign-in-alt"></i>   Login </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+         
+    <form class="form" >   
+        <br><br>
+        <img class="mx-auto d-block" src="logo.png" alt="Logo" width="350">   
+
+        <br>
+            <div class="form-control">
+                <input type="text" name = "carnet" placeholder="CUI/REGISTRO ACADEMICO"  class="form-control" required>
+            </div>
+        
+        <br>
+            <div class="form-control">
+                <input type="password" name = "password" placeholder="Password" class="form-control" required>
+            </div>
+        
+        <br>
+            <div class="mb-4 from-check">
+                <input type="checkbox" name="connected" class="form-check-input">
+                <label for="connected" class="form-check-label"> &nbsp;Mantenerme conectado</label>
+
+            </div>
+        <br>
+            <div class ="w-33">
+                <div class="center">
+                <button type="submit" class="centrado btn btn-success w-80" > Login </button>
+                </div> 
+            </div>
+        <br><br>
+
+        <div class="col-auto text-center">
+            <a class="navbar-brand " routerLink ="/Login/creat"><i class="fas fa-user-plus"></i>  Crear Cuenta &nbsp;&nbsp;&nbsp;</a> 
+            <a class="navbar-brand " routerLink ="/Login/recuperar">  &nbsp;&nbsp;¿Olvidaste la contraseña?</a> 
+        </div>
+    </form>
+
+</body>
+</html>
